@@ -1,11 +1,14 @@
 from typing import *
 class Solution:
+    
+    # Brute Force Approach
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
+
     def reverse(self,string):
         return string[::-1]  
     
     def validPalindorme(self,stringg: str) -> bool:
-        # Brute Force Approach
-
         stringg = "".join(c.lower() for c in stringg if c.isalnum())
         revString = self.reverse(stringg)
         return stringg == revString
